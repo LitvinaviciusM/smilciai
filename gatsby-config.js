@@ -35,7 +35,7 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: `https://web.pidea.lt/graphql`,
+        url: process.env.WPGRAPHQL_URL || `https://web.pidea.lt/graphql`,
       },
     },
   ],
