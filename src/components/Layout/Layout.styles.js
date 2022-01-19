@@ -106,6 +106,7 @@ export const GlobalStyles = createGlobalStyle`
   h4 {
     font-size: clamp(1.25rem, 7vw, 2rem);
     line-height: clamp(2rem, 7vw, 3rem);
+    margin-bottom: 1rem;
   }
   
   h5 {

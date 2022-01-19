@@ -5,19 +5,45 @@ export const useGalleryQuery = () => {
         query GalleryQuery {
           wpPage(databaseId: {eq: 9}) {
             ACF_HomePage {
-              gallerySection {
+              gallerySectionOne {
+                galleryName
+                galleryDescription
                 galleryImages {
                   image {
                     altText
                     localFile {
                       childImageSharp {
-                        gatsbyImageData(
-                          layout: FULL_WIDTH
-                          transformOptions: {fit: COVER, cropFocus: CENTER}
-                          placeholder: BLURRED
-                          blurredOptions: {width: 100}
-                          aspectRatio: 1.5
-                        )
+                        gatsbyImageData(blurredOptions: {width: 10}, placeholder: BLURRED)
+                        fluid(maxHeight: 10, maxWidth: 10) {
+                          base64
+                          tracedSVG
+                          srcWebp
+                          srcSetWebp
+                          originalImg
+                          originalName
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              gallerySectionTwo {
+                galleryName
+                galleryDescription
+                galleryImages {
+                  image {
+                    altText
+                    localFile {
+                      childImageSharp {
+                        gatsbyImageData(blurredOptions: {width: 10}, placeholder: BLURRED)
+                        fluid(maxHeight: 10, maxWidth: 10) {
+                          base64
+                          tracedSVG
+                          srcWebp
+                          srcSetWebp
+                          originalImg
+                          originalName
+                        }
                       }
                     }
                   }

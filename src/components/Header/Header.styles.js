@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {Link} from "gatsby";
-import {Hamburger, MainLogo} from "../../assets/svg/icons-and-logos";
+import {Hamburger, MainLogoTwo} from "../../assets/svg/icons-and-logos";
 import {motion} from "framer-motion";
 
 export const Nav = styled(motion.nav)`
@@ -31,12 +31,12 @@ export const NavContainer = styled.div`
     }
 `;
 
-export const Logo = styled(MainLogo)`
-   height: 64px;
+export const Logo = styled(MainLogoTwo)`
+   height: 48px;
    z-index: 102;
    
    @media screen and (min-width: ${props => props.theme.breakpoints.laptop}) {
-        height: 72px;
+        height: 56px;
     }
 `;
 

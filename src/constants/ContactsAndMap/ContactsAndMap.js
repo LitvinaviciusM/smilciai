@@ -1,11 +1,8 @@
 import React from 'react';
 import {ContactInfo, ContactItems, ContactsWrapper} from "../../components/Contacts/Contacts.styles";
 import Map from "../../components/Map/Map";
-import {useContactsQuery} from "../../hooks/queries/useContactsQuery";
 
-const ContactsAndMap = () => {
-
-    const {wpPage: { ACF_HomePage: {contacts: data} }} = useContactsQuery();
+const ContactsAndMap = ({data}) => {
 
     return (
         <ContactsWrapper>
@@ -25,7 +22,7 @@ const ContactsAndMap = () => {
                         <li>{data.address.contactInfo}</li>
                     </ul>
                 </ContactInfo>
-                <Map coords={data.googleMap}/>
+                    <Map coords={data.googleMap}/>
             </ContactItems>
         </ContactsWrapper>
     );

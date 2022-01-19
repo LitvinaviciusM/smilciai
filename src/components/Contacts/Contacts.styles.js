@@ -80,15 +80,14 @@ export const ContactFormWrapper = styled.div`
 `;
 
 export const ContactsWrapper = styled.div`
-    text-decoration: none;
-    height: 100%;
-    grid-row: 2/2;
-    grid-column: 1/-1;
-    width: 100%;
-    margin-top: 4rem;
-    
-    @media screen and (min-width: ${props => props.theme.breakpoints.laptopL}) {
-    grid-column: 7/13;
-    margin-top: 0;
-  }
+     grid-column: 1/13;
+     align-self: center;
+     margin-bottom: 2rem;
+     grid-row: 1;
+ 
+  @media screen and (min-width: ${props => props.theme.breakpoints.laptopL}) {
+        grid-column: 1/7;
+        margin-bottom: 0;
+    }
+ 
 `;
