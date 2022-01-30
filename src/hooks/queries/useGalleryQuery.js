@@ -7,7 +7,10 @@ export const useGalleryQuery = () => {
             ACF_HomePage {
               gallerySectionOne {
                 galleryName
-                galleryDescription
+                galleryDescriptionTitle
+                galleryDescriptionList {
+                  galleryDescriptionListItem
+                }
                 galleryImages {
                   image {
                     altText
@@ -29,7 +32,10 @@ export const useGalleryQuery = () => {
               }
               gallerySectionTwo {
                 galleryName
-                galleryDescription
+                galleryDescriptionTitle
+                galleryDescriptionList {
+                  galleryDescriptionListItem
+                }
                 galleryImages {
                   image {
                     altText

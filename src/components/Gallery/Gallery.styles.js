@@ -39,6 +39,7 @@ export const ProjectImageWrapper = styled(motion.div)`
     @media screen and (min-width: ${props => props.theme.breakpoints.phone}) {
       padding-top: 0%;
     }
+    cursor: pointer;
 `;
 
 export const ImageCard = styled.div`

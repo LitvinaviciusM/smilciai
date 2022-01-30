@@ -13,7 +13,7 @@ const Map = ({coords}) => {
     return (
         <MapContainer>
             <ButtonLinkHref target="_blank"
-                            href="https://www.google.com/maps/place/56%C2%B0+0.201+N+21%C2%B0+4.7+E/@56.003357,21.078337,15z?gl=LT"
+                            href="https://www.google.com/maps/place/56%C2%B000'07.2%22N+21%C2%B005'08.4%22E/@56.001993,21.0834663,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x321ca58a357a7fc5!8m2!3d56.00199!4d21.085655"
                             className="view_map regular_url">
                 Žiūrėti žemėlapyje
             </ButtonLinkHref>
