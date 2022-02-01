@@ -20,7 +20,7 @@ const GalleryOne = () => {
         const totalLength = data.gallerySectionOne.galleryImages.length;
         if (currentIndex + 1 >= totalLength) {
             setCurrentIndex(0);
-            const newUrl = getImage(data.gallerySectionOne.galleryImages[0].image.localFile);
+            const newUrl = data.gallerySectionOne.galleryImages[0].image;
             setClickedImg(newUrl);
             return;
         }
@@ -37,7 +37,7 @@ const GalleryOne = () => {
         const totalLength = data.gallerySectionOne.galleryImages.length;
         if (currentIndex === 0) {
             setCurrentIndex(totalLength - 1);
-            const newUrl = data.gallerySectionOne.galleryImages[totalLength - 1].image.localFile;
+            const newUrl = data.gallerySectionOne.galleryImages[totalLength - 1].image;
             setClickedImg(newUrl);
             return;
         }
@@ -65,9 +65,9 @@ const GalleryOne = () => {
             <ImagesWrapper>
                 {data.gallerySectionOne.galleryImages.length ? (
                     data.gallerySectionOne.galleryImages.map( (image, index) => (
-                        <ImageCard key={index}>
+                        <ImageCard key={index} onClick={() => handleClick(image, index)}>
                             <ProjectImageWrapper>
-                                <GatsbyImage alt={image.image.altText} image={getImage(image.image.localFile)} onClick={() => handleClick(image, index)}/>
+                                <GatsbyImage alt={image.image.altText} image={getImage(image.image.localFile)}/>
                             </ProjectImageWrapper>
                         </ImageCard>
                     ))) : ''}
