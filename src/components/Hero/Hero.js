@@ -24,6 +24,9 @@ const Hero = () => {
                         <h1>{data.heading}</h1>
                         <p>{data.subHeading}</p>
 
+                        {data.subHeadingTwo ? ( <p>{data.subHeadingTwo}</p>) : ''}
+
+
                         <ButtonScroll to={data.button.url} big="true">
                             {data.button.title}
                         </ButtonScroll>

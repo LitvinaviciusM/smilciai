@@ -9,6 +9,10 @@ export const useAboutQuery = () => {
                   aboutSection {
                     heading
                     textArea
+                    headingTwo
+                    aboutList{
+                        aboutListItem
+                    }
                     button {
                       url
                       title

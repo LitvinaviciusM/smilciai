@@ -10,6 +10,7 @@ export const useHeroQuery = () => {
                     fieldGroupName
                     heading
                     subHeading
+                    subHeadingTwo
                     button {
                       url
                       title
