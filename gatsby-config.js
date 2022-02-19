@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Smilčiai Poilsis Arčiau Jūros`,
     description: `Smilčiai Poilsis Arčiau Jūros`,
-    author: `@pidea`,
-    siteUrl: `https://pidea.lt/`,
+    author: `@pidea.lt`,
+    siteUrl: `https://smilciai.lt/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,7 +35,7 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: process.env.WPGRAPHQL_URL || `https://web.pidea.lt/graphql`,
+        url: process.env.WPGRAPHQL_URL || `http://api.smilciai.lt/graphql`,
       },
     },
   ],
